@@ -43,15 +43,11 @@ function superMercado(){
     Laticínios: ${listaDeCompras.laticinios}
     Congelados: ${listaDeCompras.congelados}
     Doces: ${listaDeCompras.doces}`);
-
-
 }
 
 function reiniciar() {
-    const listaDeCompras = {
-        frutas: [],
-        laticinios: [],
-        congelados: [],
-        doces: []
+    for (const chave in listaDeCompras) {
+        listaDeCompras[chave] = [];
     }
+    alert('Lista reiniciada!');
 }
